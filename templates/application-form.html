@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+	<link rel="stylesheet" href="styles.css">
+    <title>Application Form</title><br>
+    <h1>Application Form</h1><br>
+    <h6>Instructions: Please provide your full name, salary requirement and desired position.</h6>
+</head>
+<body>
+ <form action="/application-success" method="POST">
+
+    <label for ="firstname">First Name:</label>
+    <input id="firstname" type="text" name="firstname"> <br> 
+
+    <label for="lastname">Last Name:</label>
+    <input id="lastname" type="text" name="lastname"> <br> 
+
+    <label for="salary">Salary requirement:</label>
+    <input id="salary" type="number" name="salary"> <br> 
+
+    <label for="job">Desired job:</label> 
+    <select id="job" name="job">
+        {% for job in jobs %}
+            <option value="{{ job }}">{{ job }}</option>
+        {% endfor %}
+    </select><br>
+
+    <input type="submit">
+  </form>
+</body>
+</html>

@@ -1,0 +1,19 @@
+input[type="text"] {
+	background-color: #FFFF00;
+}
+
+input[type="number"] {
+	background-color: #FFFF00;
+}
+
+input[type="submit"] {
+	background-color: #FFFF00;
+}
+
+#lastname {
+	font-weight: bold;
+}
+
+h6 {
+	border-style: solid;
+}
