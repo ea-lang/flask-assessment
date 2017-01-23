@@ -1,12 +1,13 @@
-<!doctype html>
-<html>
+{% extends 'base.html' %}
+
 <head>
-	<link rel="stylesheet" href="styles.css">
-    <title>Application Form</title><br>
+    <link rel="stylesheet" href="styles.css">
+    {% block title %}Application Form{% endblock %}<br>
     <h1>Application Form</h1><br>
     <h6>Instructions: Please provide your full name, salary requirement and desired position.</h6>
 </head>
-<body>
+
+{% block content %}
  <form action="/application-success" method="POST">
 
     <label for ="firstname">First Name:</label>
@@ -27,5 +28,4 @@
 
     <input type="submit">
   </form>
-</body>
-</html>
+{% endblock %}
