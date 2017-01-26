@@ -22,7 +22,7 @@ def application_form():
 def submit_application():
 	firstname = request.form.get("firstname")
 	lastname = request.form.get("lastname")
-	salary = request.form.get("salary")
+	salary = int(request.form.get("salary"))
 	job = request.form.get("job")
 	return render_template("application-response.html",
 							firstname=firstname,
